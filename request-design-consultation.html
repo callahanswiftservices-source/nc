@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Design Consultation | Design MVN STUDIO</title>
+  <meta name="description" content="Schedule a formal architectural design consultation with Design MVN STUDIO. Select project type, budget parameters, timeline, and preferred meeting date.">
+  <meta name="keywords" content="Architectural Consultation NYC, Luxury Interior Design Consultation, Book Architect Manhattan">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Page Loader Screen -->
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-logo">DESIGN MVN STUDIO</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Design MVN Studio Home">
+        <div class="logo-mark">MVN</div>
+        <span>DESIGN <span class="highlight">MVN</span> STUDIO</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-desktop">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="nav-dropdown-menu">
+              <li class="nav-dropdown-item"><a href="luxury-interior-design.html">Luxury Interior Design</a></li>
+              <li class="nav-dropdown-item"><a href="architecture.html">Architecture</a></li>
+              <li class="nav-dropdown-item"><a href="kitchen-design.html">Kitchen Design</a></li>
+              <li class="nav-dropdown-item"><a href="bathroom-design.html">Bathroom Design</a></li>
+              <li class="nav-dropdown-item"><a href="living-room-design.html">Living Room Design</a></li>
+              <li class="nav-dropdown-item"><a href="bedroom-design.html">Bedroom Design</a></li>
+              <li class="nav-dropdown-item"><a href="office-design.html">Office Design</a></li>
+              <li class="nav-dropdown-item"><a href="commercial-design.html">Commercial Spaces</a></li>
+              <li class="nav-dropdown-item"><a href="renovation.html">Renovation</a></li>
+              <li class="nav-dropdown-item"><a href="space-planning.html">Space Planning</a></li>
+              <li class="nav-dropdown-item"><a href="lighting-design.html">Lighting Design</a></li>
+              <li class="nav-dropdown-item"><a href="3d-visualization.html">3D Visualization</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+          <li><a href="visit-showroom.html" class="nav-link">Showroom</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="request-design-consultation.html" class="btn btn-gold btn-sm active">Consultation</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-nav-close" id="mobileClose" aria-label="Close Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="services.html">Services</a></li>
+      <li class="mobile-nav-item"><a href="projects.html">Projects</a></li>
+      <li class="mobile-nav-item"><a href="service-areas.html">Service Areas</a></li>
+      <li class="mobile-nav-item"><a href="visit-showroom.html">Showroom</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Consultation Booking" class="page-hero-bg">
+    <div class="container page-hero-content reveal reveal-fade-up">
+      <div class="eyebrow">Start Your Transformation</div>
+      <h1>Request a Design Consultation</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Request Consultation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Form Section -->
+  <section class="section-padding">
+    <div class="container container-narrow">
+      <div class="section-header text-center reveal reveal-fade-up">
+        <div class="eyebrow">Architectural Inquiry</div>
+        <h2>Share Your Project Vision</h2>
+        <p>Complete the details below to arrange a private preliminary session with a Design MVN STUDIO principal director.</p>
+      </div>
+
+      <div class="reveal reveal-fade-up" style="background-color: var(--color-white); padding: 3.5rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); box-shadow: var(--shadow-card);">
+        <form data-handle-submit="true">
+          
+          <h4 style="margin-bottom: 1.5rem; color: var(--color-gold); border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem;">1. Personal &amp; Contact Information</h4>
+          
+          <div class="grid-2" style="gap: 1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="cName">Full Name *</label>
+              <input type="text" id="cName" class="form-control" placeholder="e.g. Harrison Sterling" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cEmail">Email Address *</label>
+              <input type="email" id="cEmail" class="form-control" placeholder="harrison@company.com" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="cPhone">Telephone Number *</label>
+              <input type="tel" id="cPhone" class="form-control" placeholder="+1 (212) 555-0199" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cLocation">Project Property Location</label>
+              <input type="text" id="cLocation" class="form-control" placeholder="e.g. Tribeca Penthouse, NYC">
+            </div>
+          </div>
+
+          <h4 style="margin-top: 2rem; margin-bottom: 1.5rem; color: var(--color-gold); border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem;">2. Project Scope &amp; Parameters</h4>
+
+          <div class="grid-2" style="gap: 1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="cProjectType">Primary Project Type *</label>
+              <select id="cProjectType" class="form-control" required>
+                <option value="">Select Project Scope</option>
+                <option value="residential-gut">Full Residential Architecture &amp; Gut Renovation</option>
+                <option value="luxury-interior">Luxury Interior Design &amp; Styling</option>
+                <option value="kitchen-bath">Custom Kitchen &amp; Spa Bath Transformation</option>
+                <option value="commercial-hq">Prestige Commercial / Executive Headquarters</option>
+                <option value="new-construction">New Custom Villa Ground-Up Construction</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cBudget">Estimated Investment Budget *</label>
+              <select id="cBudget" class="form-control" required>
+                <option value="">Select Estimated Range</option>
+                <option value="150k-300k">$150,000 &ndash; $300,000</option>
+                <option value="300k-750k">$300,000 &ndash; $750,000</option>
+                <option value="750k-1.5m">$750,000 &ndash; $1.5 Million</option>
+                <option value="1.5m-5m">$1.5 Million &ndash; $5 Million+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="cTimeline">Target Project Commencement</label>
+              <select id="cTimeline" class="form-control">
+                <option value="immediate">Immediate (Next 30 Days)</option>
+                <option value="1-3-months">1 &ndash; 3 Months</option>
+                <option value="3-6-months">3 &ndash; 6 Months</option>
+                <option value="planning">Future Planning Phase</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cMeetingPref">Meeting Preference</label>
+              <select id="cMeetingPref" class="form-control">
+                <option value="showroom">In-Person at Madison Ave Showroom</option>
+                <option value="onsite">On-Site Property Consultation</option>
+                <option value="video">Virtual Video Conference</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1.25rem;">
+            <div class="form-group">
+              <label class="form-label" for="cDate">Preferred Consultation Date</label>
+              <input type="date" id="cDate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cTime">Preferred Time Window</label>
+              <select id="cTime" class="form-control">
+                <option value="morning">Morning (10:00 AM &ndash; 12:00 PM)</option>
+                <option value="afternoon">Afternoon (1:00 PM &ndash; 4:00 PM)</option>
+                <option value="evening">Late Afternoon (4:00 PM &ndash; 6:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Services Required (Check All That Apply)</label>
+            <div class="checkbox-group">
+              <label class="checkbox-custom"><input type="checkbox" checked> Structural Spatial Planning</label>
+              <label class="checkbox-custom"><input type="checkbox" checked> 3D Photorealistic Rendering</label>
+              <label class="checkbox-custom"><input type="checkbox"> Material Sourcing &amp; Procurement</label>
+              <label class="checkbox-custom"><input type="checkbox"> Lighting Architectural Blueprint</label>
+              <label class="checkbox-custom"><input type="checkbox"> Custom Millwork &amp; Cabinetry</label>
+              <label class="checkbox-custom"><input type="checkbox"> Turn-Key Site Oversight</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cMessage">Project Brief &amp; Design Aspiration *</label>
+            <textarea id="cMessage" class="form-control" placeholder="Provide any details about architectural style preferences (e.g. minimalist, contemporary warm neutral, classic modern), room square footage, or specific design challenges..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1.15rem;">Submit Consultation Request <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <div>&copy; 2026 DESIGN MVN STUDIO. All Rights Reserved.</div>
+        <div><a href="index.html">Return to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

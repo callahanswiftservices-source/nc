@@ -1,0 +1,6 @@
+{
+  "name": "Design MVN STUDIO",
+  "description": "Luxury Architectural & Interior Design Studio website featuring showcase projects, bespoke services, interactive consultation booking, and studio showroom.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

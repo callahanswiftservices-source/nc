@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Projects | Design MVN STUDIO - Luxury Architecture</title>
+  <meta name="description" content="Browse Design MVN STUDIO's architectural portfolio showcasing luxury residences, modern villas, commercial headquarters, and high-end kitchen transformations.">
+  <meta name="keywords" content="Architectural Portfolio, Luxury Villa Photos, Modern Kitchen Design Portfolio, Penthouse Interior Architecture">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Page Loader Screen -->
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-logo">DESIGN MVN STUDIO</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Design MVN Studio Home">
+        <div class="logo-mark">MVN</div>
+        <span>DESIGN <span class="highlight">MVN</span> STUDIO</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-desktop">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="nav-dropdown-menu">
+              <li class="nav-dropdown-item"><a href="luxury-interior-design.html">Luxury Interior Design</a></li>
+              <li class="nav-dropdown-item"><a href="architecture.html">Architecture</a></li>
+              <li class="nav-dropdown-item"><a href="kitchen-design.html">Kitchen Design</a></li>
+              <li class="nav-dropdown-item"><a href="bathroom-design.html">Bathroom Design</a></li>
+              <li class="nav-dropdown-item"><a href="living-room-design.html">Living Room Design</a></li>
+              <li class="nav-dropdown-item"><a href="bedroom-design.html">Bedroom Design</a></li>
+              <li class="nav-dropdown-item"><a href="office-design.html">Office Design</a></li>
+              <li class="nav-dropdown-item"><a href="commercial-design.html">Commercial Spaces</a></li>
+              <li class="nav-dropdown-item"><a href="renovation.html">Renovation</a></li>
+              <li class="nav-dropdown-item"><a href="space-planning.html">Space Planning</a></li>
+              <li class="nav-dropdown-item"><a href="lighting-design.html">Lighting Design</a></li>
+              <li class="nav-dropdown-item"><a href="3d-visualization.html">3D Visualization</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="service-areas.html" class="nav-link">Service Areas</a></li>
+          <li><a href="visit-showroom.html" class="nav-link">Showroom</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="request-design-consultation.html" class="btn btn-gold btn-sm">Consultation</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-nav-close" id="mobileClose" aria-label="Close Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="services.html">Services</a></li>
+      <li class="mobile-nav-item"><a href="projects.html" class="active">Projects</a></li>
+      <li class="mobile-nav-item"><a href="service-areas.html">Service Areas</a></li>
+      <li class="mobile-nav-item"><a href="visit-showroom.html">Showroom</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Design MVN Projects Portfolio" class="page-hero-bg">
+    <div class="container page-hero-content reveal reveal-fade-up">
+      <div class="eyebrow">Architectural Excellence</div>
+      <h1>Selected Portfolio &amp; Case Studies</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Listing with Filters -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Interactive Category Filter Buttons -->
+      <div class="filter-nav reveal reveal-fade-up">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="bathroom">Bathroom</button>
+        <button class="filter-btn" data-filter="living">Living Room</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+        <button class="filter-btn" data-filter="luxury-homes">Luxury Homes</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="grid-3" id="projectsGrid">
+        
+        <!-- 1 -->
+        <a href="modern-villa.html" class="project-card reveal reveal-fade-up delay-1" data-category="residential luxury-homes">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="The Glass Pavilion Villa" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Luxury Architecture</div>
+            <h3 class="project-card-title">The Glass Pavilion Villa</h3>
+            <div class="project-card-location">Hamptons, New York</div>
+          </div>
+        </a>
+
+        <!-- 2 -->
+        <a href="luxury-kitchen.html" class="project-card reveal reveal-fade-up delay-2" data-category="kitchen residential">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Calacatta & Walnut Kitchen" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Kitchen Design</div>
+            <h3 class="project-card-title">Calacatta &amp; Walnut Kitchen</h3>
+            <div class="project-card-location">Upper East Side, Manhattan</div>
+          </div>
+        </a>
+
+        <!-- 3 -->
+        <a href="minimal-office.html" class="project-card reveal reveal-fade-up delay-3" data-category="commercial office">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Equinox Executive Headquarters" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Commercial Office</div>
+            <h3 class="project-card-title">Equinox Executive Headquarters</h3>
+            <div class="project-card-location">Financial District, NYC</div>
+          </div>
+        </a>
+
+        <!-- 4 -->
+        <a href="urban-apartment.html" class="project-card reveal reveal-fade-up delay-1" data-category="residential living luxury-homes">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Tribeca Duplex Sanctuary" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Residential Penthouse</div>
+            <h3 class="project-card-title">Tribeca Duplex Sanctuary</h3>
+            <div class="project-card-location">Tribeca, New York</div>
+          </div>
+        </a>
+
+        <!-- 5 -->
+        <a href="modern-villa.html" class="project-card reveal reveal-fade-up delay-2" data-category="bathroom residential">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Nero Marquina Marble Spa Suite" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Bathroom Sanctuary</div>
+            <h3 class="project-card-title">Nero Marquina Spa Suite</h3>
+            <div class="project-card-location">SoHo, Manhattan</div>
+          </div>
+        </a>
+
+        <!-- 6 -->
+        <a href="urban-apartment.html" class="project-card reveal reveal-fade-up delay-3" data-category="living residential">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Park Avenue Minimalist Salon" class="project-card-img">
+          <div class="project-card-overlay">
+            <div class="project-card-category">Living Room Architecture</div>
+            <h3 class="project-card-title">Park Avenue Minimalist Salon</h3>
+            <div class="project-card-location">Park Avenue, NYC</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding" style="background-color: var(--color-black); color: var(--color-white); text-align: center;">
+    <div class="container text-center reveal reveal-fade-up" style="max-width: 750px;">
+      <h2 style="color: var(--color-white);">Have a Project in Mind?</h2>
+      <p style="color: rgba(255,255,255,0.7); margin-bottom: 2rem;">Let us bring your architectural aspirations into reality.</p>
+      <a href="request-design-consultation.html" class="btn btn-gold">Request Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <div>&copy; 2026 DESIGN MVN STUDIO. All Rights Reserved.</div>
+        <div><a href="index.html">Return to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
