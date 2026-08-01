@@ -1,0 +1,110 @@
+/* ==========================================================================
+   DESIGN MVN STUDIO - Keyframes & Animation Stylesheet
+   Luxury Motion & Scroll Trigger Classes
+   ========================================================================== */
+
+/* Scroll Reveal Classes (Driven by IntersectionObserver in JS) */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+}
+
+.reveal-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.reveal-slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.reveal-zoom-in {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+/* Active State for Revealed Elements */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger Delay Utility Classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* Text Mask Reveal Animation */
+.text-reveal {
+  overflow: hidden;
+  display: block;
+}
+
+.text-reveal > span {
+  display: block;
+  transform: translateY(100%);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.active > span {
+  transform: translateY(0);
+}
+
+/* Hover Animated Underline */
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Floating Animation */
+@keyframes floatAnim {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+/* Pulse Gold Glow */
+@keyframes pulseGold {
+  0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+}
+
+.pulse-gold {
+  animation: pulseGold 2.5s infinite;
+}
